@@ -21,9 +21,9 @@
   /* Spacing */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
-  --space-md: 2rem;
-  --space-lg: 4rem;
-  --space-xl: 8rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+  --space-xl: 4rem;
 }
 
 /* Reset & Base */
@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: 'Crimson Text', Georgia, serif;
+  font-family: 'Lora', Georgia, serif;
   background-color: var(--cream);
   color: var(--ink);
   line-height: 1.7;
@@ -154,12 +154,12 @@ em {
    ================================ */
 
 .intro {
-  min-height: 90vh;
+  min-height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
-  gap: var(--space-lg);
-  padding-bottom: var(--space-xl);
+  gap: var(--space-md);
+  padding-bottom: var(--space-lg);
   position: relative;
 }
 
@@ -241,7 +241,7 @@ em {
    ================================ */
 
 .section {
-  padding: var(--space-xl) 0;
+  padding: var(--space-lg) 0;
   position: relative;
 }
 
@@ -561,10 +561,10 @@ em {
    ================================ */
 
 .footer {
-  padding: var(--space-xl) 0 var(--space-lg);
+  padding: var(--space-lg) 0 var(--space-md);
   text-align: center;
   border-top: 1px solid var(--cream-dark);
-  margin-top: var(--space-xl);
+  margin-top: var(--space-lg);
 }
 
 .footer__content {
