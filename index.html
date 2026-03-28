@@ -5,82 +5,178 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sukaleyan — Art historian, feltmaker, vineyard keeper. A personal space for creation, deep thinking, and wine.">
   <title>Sukaleyan</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Sticky Header -->
-  <header class="header">
-    <div class="header__left">
-      <a href="index.html" class="header__logo">sukaleyan</a>
-      <p class="header__tagline">art historian · feltmaker · vinophile</p>
-    </div>
-  </header>
+  <!-- Paper texture overlay -->
+  <div class="paper-texture"></div>
 
-  <!-- Main Split Layout -->
-  <main class="split">
+  <!-- Floating navigation -->
+  <nav class="nav">
+    <a href="#about" class="nav__item">about</a>
+    <a href="#works" class="nav__item">works</a>
+    <a href="#traces" class="nav__item">traces</a>
+    <a href="#vine" class="nav__item">the vine</a>
+  </nav>
 
-    <!-- Left Side: Photo -->
-    <section class="split__left">
-      <div class="photo-container">
-        <img src="images/me bnw.jpg" alt="" class="photo photo--bnw">
-        <img src="images/me colored.jpg" alt="Sukaleyan in the vineyard" class="photo photo--color">
+  <!-- Main canvas -->
+  <main class="atelier">
+
+    <!-- Hero/Intro area -->
+    <header class="intro">
+      <div class="intro__name-block">
+        <h1 class="intro__name">Sukaleyan</h1>
+        <p class="intro__tagline">art historian · feltmaker · vinophile</p>
+      </div>
+
+      <div class="intro__photo-frame">
+        <img src="images/me colored.jpg" alt="Sukaleyan in the vineyard" class="intro__photo">
+        <span class="intro__photo-caption">somewhere between wool and wine</span>
+      </div>
+
+      <div class="intro__welcome">
+        <p>Welcome to my corner of the world — a place where art history meets handmade felt, where vineyard rows meet research trails, and where everything connects through wine.</p>
+      </div>
+    </header>
+
+    <!-- About section -->
+    <section id="about" class="section section--about">
+      <div class="section__label">
+        <span class="label-text">who is this</span>
+        <span class="label-line"></span>
+      </div>
+
+      <div class="about__content">
+        <div class="about__card about__card--main">
+          <p>I'm an art historian who traded the museum for a vineyard — though I never really left either behind.</p>
+          <p>My days move between three worlds: <em>researching</em> how wine has been seen and shown through centuries of art, <em>making</em> felt objects by hand, and <em>tending</em> a small vineyard in Württemberg with my husband.</p>
+          <p>This isn't a portfolio. It's more like my studio with the door open.</p>
+        </div>
+
+        <div class="about__card about__card--note">
+          <span class="note-pin"></span>
+          <p class="note-text">Originally from Turkey, now rooted in Germany. The migration of wine imagery from East to West is not just my research — it's my own path.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Right Side: Tiles -->
-    <section class="split__right">
-      <div class="tiles">
-        <a href="pages/me.html" class="tile" data-color="sunlight">
-          <div class="tile__inner">
-            <h2 class="tile__title">me</h2>
-            <p class="tile__hint">the person behind all this</p>
-          </div>
-        </a>
+    <!-- Works section -->
+    <section id="works" class="section section--works">
+      <div class="section__label section__label--right">
+        <span class="label-line"></span>
+        <span class="label-text">what I make</span>
+      </div>
 
-        <a href="pages/works.html" class="tile" data-color="sage">
-          <div class="tile__inner">
-            <h2 class="tile__title">works</h2>
-            <p class="tile__hint">what my hands make</p>
-          </div>
-        </a>
+      <div class="works__content">
+        <div class="works__intro">
+          <h2 class="works__title">Felt Objects</h2>
+          <p>I work with wool — shaping, needling, felting it into forms. Heads, masks, vessels, strange soft things. Each piece takes shape slowly, layer by layer.</p>
+        </div>
 
-        <a href="pages/traces.html" class="tile" data-color="forest">
-          <div class="tile__inner">
-            <h2 class="tile__title">traces</h2>
-            <p class="tile__hint">words, research, long journeys</p>
+        <div class="works__gallery">
+          <div class="works__placeholder works__placeholder--1">
+            <span class="placeholder-text">work in progress</span>
           </div>
-        </a>
+          <div class="works__placeholder works__placeholder--2">
+            <span class="placeholder-text">coming soon</span>
+          </div>
+          <div class="works__placeholder works__placeholder--3">
+            <span class="placeholder-text">studio shots</span>
+          </div>
+        </div>
 
-        <a href="pages/the-vine.html" class="tile" data-color="bordeaux">
-          <div class="tile__inner">
-            <h2 class="tile__title">the vine</h2>
-            <p class="tile__hint">vine, wine, and everything between</p>
-          </div>
-        </a>
+        <p class="works__note">My felt work lives at <a href="https://runicgrapes.com" target="_blank" rel="noopener">Runic Grapes</a> — a platform I created for wine-inspired art and objects.</p>
       </div>
     </section>
+
+    <!-- Traces section -->
+    <section id="traces" class="section section--traces">
+      <div class="section__label">
+        <span class="label-text">what I follow</span>
+        <span class="label-line"></span>
+      </div>
+
+      <div class="traces__content">
+        <div class="traces__intro">
+          <h2 class="traces__title">Research & Writing</h2>
+          <p>I trace how wine appears in art — the grape carved above a door, the cup in a saint's hand, the vine climbing through centuries of imagery. This visual heritage traveled from East to West, just as I did.</p>
+        </div>
+
+        <div class="traces__items">
+          <article class="trace-item">
+            <span class="trace-item__type">conference</span>
+            <h3 class="trace-item__title">Iter Vitis Congress 2026</h3>
+            <p class="trace-item__desc">On integrating local creative practices into wine tourism. Rab, Croatia.</p>
+          </article>
+
+          <article class="trace-item">
+            <span class="trace-item__type">conference</span>
+            <h3 class="trace-item__title">CST Turin 2026</h3>
+            <p class="trace-item__desc">Tracing wine imagery across European wine regions — a wayfaring study.</p>
+          </article>
+
+          <article class="trace-item">
+            <span class="trace-item__type">ongoing</span>
+            <h3 class="trace-item__title">Wine's Visual Migration</h3>
+            <p class="trace-item__desc">A long-term project documenting wine's visual culture from Turkey to Germany — my migration route, and the vine's.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Vine section -->
+    <section id="vine" class="section section--vine">
+      <div class="section__label section__label--right">
+        <span class="label-line"></span>
+        <span class="label-text">where I grow</span>
+      </div>
+
+      <div class="vine__content">
+        <div class="vine__text">
+          <h2 class="vine__title">The Vineyard</h2>
+          <p>1500 square meters of vines in Württemberg. We inherited it by accident and fell in love on purpose.</p>
+          <p>We're learning as we go — pruning in winter, watching in spring, harvesting in autumn. Making small batches of wine that probably won't win awards but taste like ours.</p>
+          <p>The vineyard is where everything converges: the research, the making, the living.</p>
+        </div>
+
+        <div class="vine__visual">
+          <div class="vine-drawing">
+            <svg viewBox="0 0 200 300" class="vine-svg">
+              <path class="vine-line" d="M100,300 Q90,250 100,200 Q110,150 95,100 Q85,50 100,0" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle class="vine-grape" cx="80" cy="180" r="8"/>
+              <circle class="vine-grape" cx="95" cy="190" r="8"/>
+              <circle class="vine-grape" cx="85" cy="200" r="8"/>
+              <circle class="vine-grape" cx="100" cy="205" r="6"/>
+              <circle class="vine-grape" cx="75" cy="195" r="6"/>
+              <path class="vine-leaf" d="M120,120 Q140,100 135,80 Q130,90 120,85 Q110,80 105,95 Q100,110 120,120" fill="currentColor"/>
+              <path class="vine-leaf" d="M70,60 Q50,50 55,30 Q60,40 70,35 Q80,30 85,45 Q90,60 70,60" fill="currentColor"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact/Footer -->
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__text">Say hello</p>
+        <div class="footer__links">
+          <a href="https://instagram.com/sukaleyan" target="_blank" rel="noopener" class="footer__link">instagram</a>
+          <a href="https://linkedin.com/in/sukaleyan" target="_blank" rel="noopener" class="footer__link">linkedin</a>
+          <a href="mailto:hello@sukaleyan.com" class="footer__link">email</a>
+        </div>
+      </div>
+      <p class="footer__copy">© 2026 Sukaleyan</p>
+    </footer>
 
   </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <p class="footer__text">Get in touch.</p>
-      <div class="footer__links">
-        <a href="https://instagram.com/sukaleyan" target="_blank" rel="noopener" class="footer__link">
-          <span class="footer__link-label">instagram</span>
-        </a>
-        <a href="https://linkedin.com/in/sukaleyan" target="_blank" rel="noopener" class="footer__link">
-          <span class="footer__link-label">linkedin</span>
-        </a>
-        <a href="mailto:hello@sukaleyan.com" class="footer__link">
-          <span class="footer__link-label">message</span>
-        </a>
-      </div>
-    </div>
-    <p class="footer__copy">&copy; 2026 Sukaleyan</p>
-  </footer>
 
   <script src="js/main.js"></script>
 </body>
