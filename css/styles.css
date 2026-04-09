@@ -427,7 +427,6 @@ em {
 
 .traces__content {
   max-width: 900px;
-  margin-left: auto;
 }
 
 .traces__title {
@@ -443,7 +442,6 @@ em {
 .traces__intro p {
   font-size: 1.1rem;
   max-width: 600px;
-  margin-left: auto;
 }
 
 .traces__items {
