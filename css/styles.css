@@ -431,6 +431,14 @@ em {
 
 .traces__content {
   max-width: 900px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.traces__note {
+  transform: rotate(2deg);
 }
 
 .traces__title {
@@ -712,6 +720,12 @@ em {
 
   .traces__content {
     margin-left: 0;
+    grid-template-columns: 1fr;
+  }
+
+  .traces__note {
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .traces__intro p {
