@@ -529,29 +529,17 @@ em {
 .vine-line {
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
-  animation: drawVine 3s ease forwards;
 }
 
 .vine-grape {
   fill: var(--wine);
   opacity: 0;
-  animation: fadeIn 0.5s ease forwards;
 }
-
-.vine-grape:nth-child(2) { animation-delay: 1.5s; }
-.vine-grape:nth-child(3) { animation-delay: 1.7s; }
-.vine-grape:nth-child(4) { animation-delay: 1.9s; }
-.vine-grape:nth-child(5) { animation-delay: 2.1s; }
-.vine-grape:nth-child(6) { animation-delay: 2.3s; }
 
 .vine-leaf {
   fill: var(--sage);
   opacity: 0;
-  animation: fadeIn 0.5s ease forwards;
 }
-
-.vine-leaf:nth-of-type(1) { animation-delay: 2.5s; }
-.vine-leaf:nth-of-type(2) { animation-delay: 2.8s; }
 
 @keyframes drawVine {
   to {
