@@ -439,6 +439,8 @@ em {
 
 .traces__note {
   transform: rotate(2deg);
+  align-self: start;
+  justify-self: end;
 }
 
 .traces__title {
@@ -448,7 +450,6 @@ em {
 }
 
 .traces__intro {
-  margin-bottom: var(--space-lg);
 }
 
 .traces__intro p {
@@ -522,6 +523,10 @@ em {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.vine__gallery {
+  margin-top: var(--space-xl);
 }
 
 .vine-drawing {
