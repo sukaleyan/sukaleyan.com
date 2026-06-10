@@ -10,10 +10,13 @@
   right: auto;
   transform: none;
   flex-direction: row;
+  z-index: 1001;
 }
 
 .nav--back .nav__item {
   transform: rotate(-1deg);
+  pointer-events: auto;
+  cursor: pointer;
 }
 
 .nav--back .nav__item:hover {
