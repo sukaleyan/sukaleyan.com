@@ -97,21 +97,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', highlightNav, { passive: true });
 
-  // Smooth scroll for nav links
+  // Smooth scroll for nav links (only for hash links)
   navItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = item.getAttribute('href');
-      const targetSection = document.querySelector(targetId);
+    const href = item.getAttribute('href');
+    if (href && href.startsWith('#')) {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetSection = document.querySelector(href);
 
-      if (targetSection) {
-        const offsetTop = targetSection.offsetTop - 40;
-        window.scrollTo({
-          top: offsetTop,
-          behavior: 'smooth'
-        });
-      }
-    });
+        if (targetSection) {
+          const offsetTop = targetSection.offsetTop - 40;
+          window.scrollTo({
+            top: offsetTop,
+            behavior: 'smooth'
+          });
+        }
+      });
+    }
   });
 
   // Parallax effect on intro photo
