@@ -1,0 +1,226 @@
+/* ================================
+   TRACES ARCHIVE PAGE
+   ================================ */
+
+/* Back navigation */
+.nav--back {
+  position: fixed;
+  top: var(--space-md);
+  left: var(--space-md);
+  right: auto;
+  transform: none;
+  flex-direction: row;
+}
+
+.nav--back .nav__item {
+  transform: rotate(-1deg);
+}
+
+.nav--back .nav__item:hover {
+  transform: rotate(0deg) translateX(4px);
+}
+
+/* Archive container */
+.archive {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+  padding-top: calc(var(--space-xl) + 40px);
+}
+
+/* Header */
+.archive__header {
+  margin-bottom: var(--space-xl);
+  max-width: 700px;
+}
+
+.archive__title {
+  font-family: 'Cormorant', Georgia, serif;
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 300;
+  color: var(--ink);
+  margin-bottom: var(--space-md);
+}
+
+.archive__intro {
+  font-size: 1.15rem;
+  color: var(--ink-light);
+  line-height: 1.8;
+}
+
+/* Category sections */
+.archive__category {
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--cream-dark);
+}
+
+.archive__category:last-of-type {
+  border-bottom: none;
+}
+
+.archive__category-title {
+  font-family: 'Cormorant', Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--wine);
+  margin-bottom: var(--space-xs);
+}
+
+.archive__category-desc {
+  font-size: 0.95rem;
+  color: var(--ink-light);
+  font-style: italic;
+  margin-bottom: var(--space-lg);
+  max-width: 600px;
+}
+
+/* Grid of entries */
+.archive__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-lg);
+}
+
+/* Individual entry */
+.archive__entry {
+  background: var(--paper);
+  border: 1px solid var(--cream-dark);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.archive__entry:nth-child(odd) {
+  transform: rotate(-0.5deg);
+}
+
+.archive__entry:nth-child(even) {
+  transform: rotate(0.5deg);
+}
+
+.archive__entry:hover {
+  box-shadow: 6px 6px 20px rgba(44, 36, 22, 0.12);
+}
+
+.archive__entry:nth-child(odd):hover {
+  transform: rotate(-0.5deg) translateY(-4px);
+}
+
+.archive__entry:nth-child(even):hover {
+  transform: rotate(0.5deg) translateY(-4px);
+}
+
+/* Entry image */
+.archive__image {
+  width: 100%;
+  aspect-ratio: 4/3;
+  overflow: hidden;
+  background: var(--cream-dark);
+}
+
+.archive__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.95) contrast(1.02);
+  transition: transform 0.4s ease;
+}
+
+.archive__entry:hover .archive__image img {
+  transform: scale(1.03);
+}
+
+/* Entry details */
+.archive__details {
+  padding: var(--space-md);
+}
+
+.archive__location {
+  font-family: 'Cormorant', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 0.2rem;
+}
+
+.archive__place {
+  font-family: 'Caveat', cursive;
+  font-size: 1rem;
+  color: var(--sage);
+  margin-bottom: var(--space-sm);
+}
+
+.archive__description {
+  font-size: 0.95rem;
+  color: var(--ink-light);
+  line-height: 1.6;
+  margin-bottom: var(--space-sm);
+}
+
+.archive__date {
+  font-family: 'Caveat', cursive;
+  font-size: 0.9rem;
+  color: var(--ochre-muted);
+}
+
+/* Empty category */
+.archive__category--empty {
+  opacity: 0.6;
+}
+
+.archive__empty-note {
+  font-family: 'Caveat', cursive;
+  font-size: 1.1rem;
+  color: var(--ink-light);
+  font-style: italic;
+}
+
+/* Simple footer */
+.footer--simple {
+  padding: var(--space-lg) 0 var(--space-md);
+  text-align: center;
+  border-top: 1px solid var(--cream-dark);
+  margin-top: var(--space-lg);
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
+
+@media (max-width: 900px) {
+  .nav--back {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: var(--space-md);
+  }
+
+  .archive {
+    padding-top: var(--space-lg);
+  }
+
+  .archive__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+
+  .archive__entry:nth-child(odd),
+  .archive__entry:nth-child(even) {
+    transform: none;
+  }
+
+  .archive__entry:nth-child(odd):hover,
+  .archive__entry:nth-child(even):hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 500px) {
+  .archive__title {
+    font-size: 2.2rem;
+  }
+
+  .archive__category-title {
+    font-size: 1.5rem;
+  }
+}
