@@ -479,6 +479,19 @@ em {
   margin-bottom: var(--space-md);
 }
 
+.traces__gallery .works__placeholder {
+  aspect-ratio: auto;
+  padding: 6px;
+}
+
+.traces__gallery .works__placeholder img {
+  height: auto;
+}
+
+.traces__gallery .works__placeholder::after {
+  bottom: 6px;
+}
+
 .works__placeholder--4 {
   transform: rotate(1.5deg);
 }
