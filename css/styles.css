@@ -500,11 +500,24 @@ em {
   transform: rotate(1.5deg) translateY(-3px);
 }
 
-.traces__archive-link {
+.traces__gallery-wrapper {
+  position: relative;
+}
+
+.traces__see-all {
+  position: absolute;
+  top: -2rem;
+  right: 0;
   font-family: 'Caveat', cursive;
-  font-size: 1.15rem;
-  color: var(--ink-light);
-  margin-top: var(--space-sm);
+  font-size: 1.25rem;
+  color: var(--terracotta);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.traces__see-all:hover {
+  color: var(--wine);
+  transform: translateX(4px);
 }
 
 .traces__items {
