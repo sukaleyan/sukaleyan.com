@@ -32,544 +32,636 @@
       <p class="archive__intro">Wine imagery collected on my travels. Building facades, village squares, cathedral towers, forgotten corners. The vine leaves a trace everywhere it has been cultivated — and I'm following it.</p>
     </header>
 
-    <!-- Category: Plant/Fruit -->
-    <section class="archive__category">
-      <h2 class="archive__category-title">plant & fruit</h2>
-      <p class="archive__category-desc">The grape, the vine, the tendril. The most direct symbols of viticulture — carved, painted, woven into architecture.</p>
+    <!-- Filter buttons -->
+    <div class="archive__filters">
+      <button class="filter-btn filter-btn--active" data-filter="all">all</button>
+      <button class="filter-btn" data-filter="plant">plant & fruit</button>
+      <button class="filter-btn" data-filter="labor">labor</button>
+      <button class="filter-btn" data-filter="vessel">the vessel</button>
+      <button class="filter-btn" data-filter="god">the god & his world</button>
+      <button class="filter-btn" data-filter="act">the act</button>
+    </div>
 
-      <div class="archive__grid">
+    <!-- Unified grid -->
+    <div class="archive__grid">
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/barcelona - a shop window.jpg" alt="Shop window with wine imagery, Barcelona">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Barcelona, Spain</h3>
-            <p class="archive__place">Shop window</p>
-            <p class="archive__description">Wine imagery in a Barcelona storefront.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+      <!-- 2026 entries (newest first) -->
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/sicily shop window.jpg" alt="Shop window with wine imagery, Sicily">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/barcelona - a shop window.jpg" alt="Shop window with wine imagery, Barcelona">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Barcelona, Spain</h3>
+          <p class="archive__place">Shop window</p>
+          <p class="archive__description">Wine imagery in a Barcelona storefront.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Sicily, Italy</h3>
-            <p class="archive__place">Shop window</p>
-            <p class="archive__description">Wine imagery in a Sicilian storefront.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/wiesloch public sculpture.png" alt="Bronze rooster sculpture with grape cluster, Wiesloch">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/sicily shop window.jpg" alt="Shop window with wine imagery, Sicily">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Sicily, Italy</h3>
+          <p class="archive__place">Shop window</p>
+          <p class="archive__description">Wine imagery in a Sicilian storefront.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Wiesloch, Germany</h3>
-            <p class="archive__place">Public square</p>
-            <p class="archive__description">"Verscheucht nun die Sorgen..." — chase away the worries now. A bronze rooster bursts through a vine ring, grapes tumbling. Wine country wisdom cast in metal.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/usak muzesi 2.png" alt="Ancient marble column with grape garlands, Uşak Museum">
+      <article class="archive__entry" data-categories="god">
+        <div class="archive__image">
+          <img src="images/traces/sintra-triton-1.png" alt="Triton Window at Pena Palace, Sintra">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Sintra, Portugal</h3>
+          <p class="archive__place">Pena Palace</p>
+          <p class="archive__description">A triton rises from a giant shell at the palace entrance — half sea creature, half man. Above him, vine leaves and grape clusters twist around the window, heavy with symbolism. Nature disciplined into abundance.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Uşak, Turkey</h3>
-            <p class="archive__place">Uşak Museum</p>
-            <p class="archive__description">Grape garlands carved into ancient marble — a column base or altar fragment. The vine was sacred here long before the word "wine" existed.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/marsala sicily.png" alt="Ancient painted tile with vines, Marsala">
+      <article class="archive__entry" data-categories="god">
+        <div class="archive__image">
+          <img src="images/traces/berlin archeology museum.jpg" alt="Ancient artifact, Altes Museum Berlin">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Berlin, Germany</h3>
+          <p class="archive__place">Altes Museum</p>
+          <p class="archive__description">Wine-related artifact in the Berlin collections.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Marsala, Sicily</h3>
-            <p class="archive__place">Archaeological museum</p>
-            <p class="archive__description">A painted tile fragment — vine leaves and grape clusters in ochre and blue. Millennia old, from a land that still carries the name of its most famous wine.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/la sagrada famiglia.png" alt="Grape cluster carving at La Sagrada Família, Barcelona">
+      <article class="archive__entry" data-categories="god">
+        <div class="archive__image">
+          <img src="images/traces/berlin archeology museum 2.jpg" alt="Ancient artifact, Altes Museum Berlin">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Berlin, Germany</h3>
+          <p class="archive__place">Altes Museum</p>
+          <p class="archive__description">Wine-related artifact in the Berlin collections.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Barcelona, Spain</h3>
-            <p class="archive__place">La Sagrada Família</p>
-            <p class="archive__description">"Amen" — and beside it, a grape cluster carved into Gaudí's stone. The Eucharist made visible: bread and wine encoded into the cathedral's skin.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/heidelberg-coat-of-arms.png" alt="Coat of arms with grapes near Heidelberg">
+      <article class="archive__entry" data-categories="god">
+        <div class="archive__image">
+          <img src="images/traces/berlin museum.jpg" alt="Artifact, Altes Museum Berlin">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Berlin, Germany</h3>
+          <p class="archive__place">Altes Museum</p>
+          <p class="archive__description">Wine imagery in the Berlin collections.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Near Heidelberg, Germany</h3>
-            <p class="archive__place">Village marker</p>
-            <p class="archive__description">A painted coat of arms: lion above, grapes and fish below. The vine shares heraldic space with older symbols of the land.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/trapani-libreria.png" alt="Libreria facade with vine tile pattern, Trapani">
+      <article class="archive__entry" data-categories="vessel">
+        <div class="archive__image">
+          <img src="images/traces/frankfurt rats keller.jpg" alt="Ratskeller, Frankfurt">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Frankfurt, Germany</h3>
+          <p class="archive__place">Ratskeller</p>
+          <p class="archive__description">Wine imagery at the historic Ratskeller.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the vessel</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Trapani, Sicily</h3>
-            <p class="archive__place">Libreria storefront</p>
-            <p class="archive__description">Vine patterns climb the tile border of a bookshop facade — the grape finds its way even into places dedicated to words.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/esslingen-winebar.png" alt="Wrought iron wine bar door with grape vines, Esslingen">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/mosel decor.jpg" alt="Wine decoration, Mosel Valley">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Mosel Valley, Germany</h3>
+          <p class="archive__place">Decorative detail</p>
+          <p class="archive__description">Wine imagery in the Mosel.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Esslingen, Germany</h3>
-            <p class="archive__place">Wine bar door, old town</p>
-            <p class="archive__description">A golden horse head framed by wrought iron grape vines — the entrance to a wine bar, where craft announces what waits inside.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/bordeaux.jpg" alt="Golden grape sculpture at Place de la Victoire, Bordeaux">
+      <article class="archive__entry" data-categories="labor">
+        <div class="archive__image">
+          <img src="images/traces/mosel family.jpg" alt="Wine imagery, Mosel Valley">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Mosel Valley, Germany</h3>
+          <p class="archive__place">Wine region</p>
+          <p class="archive__description">Wine imagery in the Mosel.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">labor</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Bordeaux, France</h3>
-            <p class="archive__place">Place de la Victoire</p>
-            <p class="archive__description">A gilded grape cluster embedded in red marble — part of Ivan Theimer's 2005 monument to Bordeaux viticulture, the first of its kind in the city.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/mosel decor.jpg" alt="Wine decoration, Mosel Valley">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/mosel longuich.png" alt="Wine imagery, Longuich">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Longuich, Germany</h3>
+          <p class="archive__place">Mosel Valley</p>
+          <p class="archive__description">Wine imagery in Longuich.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Mosel Valley, Germany</h3>
-            <p class="archive__place">Decorative detail</p>
-            <p class="archive__description">Wine imagery in the Mosel.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/mosel longuich.png" alt="Wine imagery, Longuich">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/mosel.jpg" alt="Wine imagery, Mosel Valley">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Mosel Valley, Germany</h3>
+          <p class="archive__place">Wine region</p>
+          <p class="archive__description">Wine imagery in the Mosel.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Longuich, Germany</h3>
-            <p class="archive__place">Mosel Valley</p>
-            <p class="archive__description">Wine imagery in Longuich.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/mosel.jpg" alt="Wine imagery, Mosel Valley">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/frankfurt.jpg" alt="Wine imagery, Frankfurt">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Frankfurt, Germany</h3>
+          <p class="archive__place">City center</p>
+          <p class="archive__description">Wine imagery in Frankfurt.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Mosel Valley, Germany</h3>
-            <p class="archive__place">Wine region</p>
-            <p class="archive__description">Wine imagery in the Mosel.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/frankfurt.jpg" alt="Wine imagery, Frankfurt">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/wiesloch public sculpture.png" alt="Bronze rooster sculpture with grape cluster, Wiesloch">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Wiesloch, Germany</h3>
+          <p class="archive__place">Public square</p>
+          <p class="archive__description">"Verscheucht nun die Sorgen..." — chase away the worries now. A bronze rooster bursts through a vine ring, grapes tumbling. Wine country wisdom cast in metal.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Frankfurt, Germany</h3>
-            <p class="archive__place">City center</p>
-            <p class="archive__description">Wine imagery in Frankfurt.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/cleebronn-weinsicht.png" alt="Schönste Weinsicht viewpoint sign, Cleebronn">
+      <article class="archive__entry" data-categories="plant god">
+        <div class="archive__image">
+          <img src="images/traces/usak muzesi 2.png" alt="Ancient marble column with grape garlands, Uşak Museum">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Uşak, Turkey</h3>
+          <p class="archive__place">Uşak Museum</p>
+          <p class="archive__description">Grape garlands carved into ancient marble — a column base or altar fragment. The vine was sacred here long before the word "wine" existed.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
+            <span class="archive__tag">the god & his world</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Cleebronn, Germany</h3>
-            <p class="archive__place">Vineyard viewpoint</p>
-            <p class="archive__description">"Schönste Weinsicht 2020" — a rusted steel sign marking Württemberg's most beautiful wine view, the grape cluster cut out to frame the landscape beyond.</p>
-            <span class="archive__date">Found 2025</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/stuttgart-sparkasse.png" alt="Bronze sculpture with grape clusters, Stuttgart">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/marsala sicily.png" alt="Ancient painted tile with vines, Marsala">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Marsala, Sicily</h3>
+          <p class="archive__place">Archaeological museum</p>
+          <p class="archive__description">A painted tile fragment — vine leaves and grape clusters in ochre and blue. Millennia old, from a land that still carries the name of its most famous wine.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Stuttgart, Germany</h3>
-            <p class="archive__place">Sparkasse, city center</p>
-            <p class="archive__description">A bronze figure holds grape clusters against the sky — Württemberg's wine heritage cast in metal at the heart of the city.</p>
-            <span class="archive__date">Found 2025</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/strasbourg-ceramic.png" alt="Ceramic still life with vine leaves and grapes, Strasbourg">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/la sagrada famiglia.png" alt="Grape cluster carving at La Sagrada Família, Barcelona">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Barcelona, Spain</h3>
+          <p class="archive__place">La Sagrada Família</p>
+          <p class="archive__description">"Amen" — and beside it, a grape cluster carved into Gaudí's stone. The Eucharist made visible: bread and wine encoded into the cathedral's skin.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Strasbourg, France</h3>
-            <p class="archive__place">Ceramic shop, old town</p>
-            <p class="archive__description">A ceramic still life heavy with vine leaves, grapes, and figs — Alsatian craftsmanship celebrating the region's harvest.</p>
-            <span class="archive__date">Found 2025</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/esslingen-tile.png" alt="Grape tile above a cellar door in Esslingen, Germany">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/heidelberg-coat-of-arms.png" alt="Coat of arms with grapes near Heidelberg">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Near Heidelberg, Germany</h3>
+          <p class="archive__place">Village marker</p>
+          <p class="archive__description">A painted coat of arms: lion above, grapes and fish below. The vine shares heraldic space with older symbols of the land.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Esslingen, Germany</h3>
-            <p class="archive__place">Old town cellar door</p>
-            <p class="archive__description">A painted grape tile above a cellar entrance, dated 1702. Over three centuries of marking what lies beneath.</p>
-            <span class="archive__date">Found 2025</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/bilbao-column.png" alt="Grape-covered column at Azkuna Zentroa, Bilbao">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/trapani-libreria.png" alt="Libreria facade with vine tile pattern, Trapani">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Trapani, Sicily</h3>
+          <p class="archive__place">Libreria storefront</p>
+          <p class="archive__description">Vine patterns climb the tile border of a bookshop facade — the grape finds its way even into places dedicated to words.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Bilbao, Spain</h3>
-            <p class="archive__place">Azkuna Zentroa</p>
-            <p class="archive__description">A grape-covered column inside the cultural center — once a wine warehouse, now transformed by Philippe Starck's 43 unique columns.</p>
-            <span class="archive__date">Found 2024</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/andlau-bear.png" alt="Bronze bear sculpture in Andlau, France">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/esslingen-winebar.png" alt="Wrought iron wine bar door with grape vines, Esslingen">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Esslingen, Germany</h3>
+          <p class="archive__place">Wine bar door, old town</p>
+          <p class="archive__description">A golden horse head framed by wrought iron grape vines — the entrance to a wine bar, where craft announces what waits inside.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Andlau, France</h3>
-            <p class="archive__place">Village square</p>
-            <p class="archive__description">A bronze bear clutching grapes in the heart of Alsace wine country. The bear is Andlau's symbol — legend says a bear showed the founders where to build.</p>
-            <span class="archive__date">Found 2024</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/sagrada-familia.png" alt="Grape carving on La Sagrada Família, Barcelona">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/bordeaux.jpg" alt="Golden grape sculpture at Place de la Victoire, Bordeaux">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Bordeaux, France</h3>
+          <p class="archive__place">Place de la Victoire</p>
+          <p class="archive__description">A gilded grape cluster embedded in red marble — part of Ivan Theimer's 2005 monument to Bordeaux viticulture, the first of its kind in the city.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Barcelona, Spain</h3>
-            <p class="archive__place">La Sagrada Família</p>
-            <p class="archive__description">Grape clusters carved into the stone of Gaudí's unfinished masterpiece. Nature made permanent in sandstone.</p>
-            <span class="archive__date">Found 2023</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-      </div>
-    </section>
+      <article class="archive__entry" data-categories="labor">
+        <div class="archive__image">
+          <img src="images/traces/esslingen germany.png" alt="Historic wooden wine press, Esslingen">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Esslingen, Germany</h3>
+          <p class="archive__place">Old town</p>
+          <p class="archive__description">A wooden wine press stands beneath its own small roof — screw, beam, and barrel intact. The machine that once crushed the harvest, preserved as monument.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">labor</span>
+          </div>
+        </div>
+      </article>
 
-    <!-- Category: Labor -->
-    <section class="archive__category">
-      <h2 class="archive__category-title">labor</h2>
-      <p class="archive__category-desc">Pruning, harvest, pressing, cellar work. The human effort that transforms wild vine into wine.</p>
+      <article class="archive__entry" data-categories="labor plant">
+        <div class="archive__image">
+          <img src="images/traces/weinheim-sculpture.png" alt="City history sculpture with grape vines, Weinheim">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Weinheim, Germany</h3>
+          <p class="archive__place">Town square</p>
+          <p class="archive__description">A bronze sculpture telling the city's story — figures emerge from vines, the grape woven into Weinheim's very name and history.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">labor</span>
+            <span class="archive__tag">plant & fruit</span>
+          </div>
+        </div>
+      </article>
 
-      <div class="archive__grid">
+      <article class="archive__entry" data-categories="labor">
+        <div class="archive__image">
+          <img src="images/traces/marseille.jpg" alt="Weathered mural of a man carrying wine bottles, Marseille">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Marseille, France</h3>
+          <p class="archive__place">Museum (possibly MuCEM)</p>
+          <p class="archive__description">A weathered mural showing a figure carrying wine bottles — labor caught in faded pigment, origin still being traced.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">labor</span>
+          </div>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/mosel family.jpg" alt="Wine imagery, Mosel Valley">
+      <article class="archive__entry" data-categories="vessel">
+        <div class="archive__image">
+          <img src="images/traces/marsala florio winery.png" alt="Giant wine barrel at Florio winery, Marsala">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Marsala, Sicily</h3>
+          <p class="archive__place">Florio winery cellar</p>
+          <p class="archive__description">A giant barrel rises under vaulted arches, dwarfing the cart of smaller casks before it. Scale as statement — Florio's cathedral of Marsala wine.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the vessel</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Mosel Valley, Germany</h3>
-            <p class="archive__place">Wine region</p>
-            <p class="archive__description">Wine imagery in the Mosel.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/esslingen germany.png" alt="Historic wooden wine press, Esslingen">
+      <article class="archive__entry" data-categories="vessel">
+        <div class="archive__image">
+          <img src="images/traces/florio vinery mural sicily.png" alt="Surrealist mural at Florio winery, Sicily">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Marsala, Sicily</h3>
+          <p class="archive__place">Florio winery</p>
+          <p class="archive__description">"La leggerezza del sogno" — a surrealist mural by Prometeo. A hand emerges from rocky peaks to offer a Florio bottle to a dreaming moon. Wine as gift to the cosmos.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the vessel</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Esslingen, Germany</h3>
-            <p class="archive__place">Old town</p>
-            <p class="archive__description">A wooden wine press stands beneath its own small roof — screw, beam, and barrel intact. The machine that once crushed the harvest, preserved as monument.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/weinheim-sculpture.png" alt="City history sculpture with grape vines, Weinheim">
+      <article class="archive__entry" data-categories="god">
+        <div class="archive__image">
+          <img src="images/traces/barcelona.png" alt="Bronze Bacchanalian sculpture, Barcelona">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Barcelona, Spain</h3>
+          <p class="archive__place">Public square</p>
+          <p class="archive__description">A bronze Bacchanal — figures entwined, one lifting grapes to the sky. The god's world rendered in metal, presiding over a Catalan plaza.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Weinheim, Germany</h3>
-            <p class="archive__place">Town square</p>
-            <p class="archive__description">A bronze sculpture telling the city's story — figures emerge from vines, the grape woven into Weinheim's very name and history.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/mosel.jpg" alt="Stone relief on winery wall, framed by real grapevines, Mosel">
+      <article class="archive__entry" data-categories="god plant">
+        <div class="archive__image">
+          <img src="images/traces/usak muzesi turkiye.png" alt="Roman funerary relief with grape vines, Uşak Museum">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Uşak, Turkey</h3>
+          <p class="archive__place">Uşak Museum</p>
+          <p class="archive__description">A Roman funerary stele — the deceased gazes out beneath a pediment carved with grapes and a bird. Even in death, the vine accompanies.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Mosel Valley, Germany</h3>
-            <p class="archive__place">Winery wall, near Mehring</p>
-            <p class="archive__description">A stone relief showing harvest labor, set into an ochre wall and framed by living vines — art and cultivation intertwined.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/marseille.jpg" alt="Weathered mural of a man carrying wine bottles, Marseille">
+      <article class="archive__entry" data-categories="god plant">
+        <div class="archive__image">
+          <img src="images/traces/akhisar-putti.png" alt="Putti fountain with painted grapes, Akhisar">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Akhisar, Turkey</h3>
+          <p class="archive__place">City square</p>
+          <p class="archive__description">Putti holding painted grapes at a city fountain — a trace of wine culture in a land where the vine has grown for millennia.</p>
+          <span class="archive__date">Found 2026</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Marseille, France</h3>
-            <p class="archive__place">Museum (possibly MuCEM)</p>
-            <p class="archive__description">A weathered mural showing a figure carrying wine bottles — labor caught in faded pigment, origin still being traced.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/traben-trarbach-winzer.png" alt="Winzer building facade, Traben-Trarbach">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Traben-Trarbach, Germany</h3>
-            <p class="archive__place">Winzer building, old town</p>
-            <p class="archive__description">A yellow facade alive with painted figures — winemakers, barrels, and grape motifs announcing the trade of the house.</p>
-            <span class="archive__date">Found 2025</span>
-          </div>
-        </article>
+      <!-- 2025 entries -->
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/bruchsal-mural.png" alt="Sgraffito mural in Bruchsal, Germany">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/cleebronn-weinsicht.png" alt="Schönste Weinsicht viewpoint sign, Cleebronn">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Cleebronn, Germany</h3>
+          <p class="archive__place">Vineyard viewpoint</p>
+          <p class="archive__description">"Schönste Weinsicht 2020" — a rusted steel sign marking Württemberg's most beautiful wine view, the grape cluster cut out to frame the landscape beyond.</p>
+          <span class="archive__date">Found 2025</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Bruchsal, Germany</h3>
-            <p class="archive__place">Building facade, old town</p>
-            <p class="archive__description">Dancers carrying a wine barrel, painted in sgraffito directly onto the building's plaster. Celebration of the harvest, frozen on a wall.</p>
-            <span class="archive__date">Found 2025</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-      </div>
-    </section>
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/stuttgart-sparkasse.png" alt="Bronze sculpture with grape clusters, Stuttgart">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Stuttgart, Germany</h3>
+          <p class="archive__place">Sparkasse, city center</p>
+          <p class="archive__description">A bronze figure holds grape clusters against the sky — Württemberg's wine heritage cast in metal at the heart of the city.</p>
+          <span class="archive__date">Found 2025</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
+          </div>
+        </div>
+      </article>
 
-    <!-- Category: The Vessel -->
-    <section class="archive__category">
-      <h2 class="archive__category-title">the vessel</h2>
-      <p class="archive__category-desc">Cup, glass, amphora, fountain. The containers that hold and pour — symbols of hospitality and ritual.</p>
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/strasbourg-ceramic.png" alt="Ceramic still life with vine leaves and grapes, Strasbourg">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Strasbourg, France</h3>
+          <p class="archive__place">Ceramic shop, old town</p>
+          <p class="archive__description">A ceramic still life heavy with vine leaves, grapes, and figs — Alsatian craftsmanship celebrating the region's harvest.</p>
+          <span class="archive__date">Found 2025</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
+          </div>
+        </div>
+      </article>
 
-      <div class="archive__grid">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/esslingen-tile.png" alt="Grape tile above a cellar door in Esslingen, Germany">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Esslingen, Germany</h3>
+          <p class="archive__place">Old town cellar door</p>
+          <p class="archive__description">A painted grape tile above a cellar entrance, dated 1702. Over three centuries of marking what lies beneath.</p>
+          <span class="archive__date">Found 2025</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
+          </div>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/frankfurt rats keller.jpg" alt="Ratskeller, Frankfurt">
+      <article class="archive__entry" data-categories="labor">
+        <div class="archive__image">
+          <img src="images/traces/traben-trarbach-winzer.png" alt="Winzer building facade, Traben-Trarbach">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Traben-Trarbach, Germany</h3>
+          <p class="archive__place">Winzer building, old town</p>
+          <p class="archive__description">A yellow facade alive with painted figures — winemakers, barrels, and grape motifs announcing the trade of the house.</p>
+          <span class="archive__date">Found 2025</span>
+          <div class="archive__tags">
+            <span class="archive__tag">labor</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Frankfurt, Germany</h3>
-            <p class="archive__place">Ratskeller</p>
-            <p class="archive__description">Wine imagery at the historic Ratskeller.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/marsala florio winery.png" alt="Giant wine barrel at Florio winery, Marsala">
+      <article class="archive__entry" data-categories="labor">
+        <div class="archive__image">
+          <img src="images/traces/bruchsal-mural.png" alt="Sgraffito mural in Bruchsal, Germany">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Bruchsal, Germany</h3>
+          <p class="archive__place">Building facade, old town</p>
+          <p class="archive__description">Dancers carrying a wine barrel, painted in sgraffito directly onto the building's plaster. Celebration of the harvest, frozen on a wall.</p>
+          <span class="archive__date">Found 2025</span>
+          <div class="archive__tags">
+            <span class="archive__tag">labor</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Marsala, Sicily</h3>
-            <p class="archive__place">Florio winery cellar</p>
-            <p class="archive__description">A giant barrel rises under vaulted arches, dwarfing the cart of smaller casks before it. Scale as statement — Florio's cathedral of Marsala wine.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/florio vinery mural sicily.png" alt="Surrealist mural at Florio winery, Sicily">
+      <article class="archive__entry" data-categories="god plant">
+        <div class="archive__image">
+          <img src="images/traces/bruchsal-schloss.png" alt="Classical sculpture with figures and grapes, Bruchsal Schloss">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Bruchsal, Germany</h3>
+          <p class="archive__place">Schloss garden</p>
+          <p class="archive__description">A classical sculpture group in the palace garden — figures entwined with grapes, Baroque excess rendered in stone.</p>
+          <span class="archive__date">Found 2025</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Marsala, Sicily</h3>
-            <p class="archive__place">Florio winery</p>
-            <p class="archive__description">"La leggerezza del sogno" — a surrealist mural by Prometeo. A hand emerges from rocky peaks to offer a Florio bottle to a dreaming moon. Wine as gift to the cosmos.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/fuente-de-irache.png" alt="Fuente de Irache wine fountain, Spain">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Ayegui, Spain</h3>
-            <p class="archive__place">Fuente de Irache, Camino de Santiago</p>
-            <p class="archive__description">Two taps emerge from the wall: one pours water, the other wine. A gift from the local bodega to pilgrims walking the Camino.</p>
-            <span class="archive__date">Found 2024</span>
-          </div>
-        </article>
+      <!-- 2024 entries -->
 
-      </div>
-    </section>
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/bilbao-column.png" alt="Grape-covered column at Azkuna Zentroa, Bilbao">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Bilbao, Spain</h3>
+          <p class="archive__place">Azkuna Zentroa</p>
+          <p class="archive__description">A grape-covered column inside the cultural center — once a wine warehouse, now transformed by Philippe Starck's 43 unique columns.</p>
+          <span class="archive__date">Found 2024</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
+          </div>
+        </div>
+      </article>
 
-    <!-- Category: The God & His World -->
-    <section class="archive__category">
-      <h2 class="archive__category-title">the god & his world</h2>
-      <p class="archive__category-desc">Bacchus, Dionysus, satyrs, maenads. The mythological realm where wine meets the divine.</p>
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/andlau-bear.png" alt="Bronze bear sculpture in Andlau, France">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Andlau, France</h3>
+          <p class="archive__place">Village square</p>
+          <p class="archive__description">A bronze bear clutching grapes in the heart of Alsace wine country. The bear is Andlau's symbol — legend says a bear showed the founders where to build.</p>
+          <span class="archive__date">Found 2024</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
+          </div>
+        </div>
+      </article>
 
-      <div class="archive__grid">
+      <article class="archive__entry" data-categories="vessel">
+        <div class="archive__image">
+          <img src="images/traces/fuente-de-irache.png" alt="Fuente de Irache wine fountain, Spain">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Ayegui, Spain</h3>
+          <p class="archive__place">Fuente de Irache, Camino de Santiago</p>
+          <p class="archive__description">Two taps emerge from the wall: one pours water, the other wine. A gift from the local bodega to pilgrims walking the Camino.</p>
+          <span class="archive__date">Found 2024</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the vessel</span>
+          </div>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/sintra-triton-1.png" alt="Triton Window at Pena Palace, Sintra">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Sintra, Portugal</h3>
-            <p class="archive__place">Pena Palace</p>
-            <p class="archive__description">A triton rises from a giant shell at the palace entrance — half sea creature, half man. Above him, vine leaves and grape clusters twist around the window, heavy with symbolism. Nature disciplined into abundance.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+      <!-- 2023 entries -->
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/berlin archeology museum.jpg" alt="Ancient artifact, Altes Museum Berlin">
+      <article class="archive__entry" data-categories="plant">
+        <div class="archive__image">
+          <img src="images/traces/sagrada-familia.png" alt="Grape carving on La Sagrada Família, Barcelona">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Barcelona, Spain</h3>
+          <p class="archive__place">La Sagrada Família</p>
+          <p class="archive__description">Grape clusters carved into the stone of Gaudí's unfinished masterpiece. Nature made permanent in sandstone.</p>
+          <span class="archive__date">Found 2023</span>
+          <div class="archive__tags">
+            <span class="archive__tag">plant & fruit</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Berlin, Germany</h3>
-            <p class="archive__place">Altes Museum</p>
-            <p class="archive__description">Wine-related artifact in the Berlin collections.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/berlin archeology museum 2.jpg" alt="Ancient artifact, Altes Museum Berlin">
+      <article class="archive__entry" data-categories="god">
+        <div class="archive__image">
+          <img src="images/traces/marsala-altar.png" alt="Ancient altar in Marsala, Sicily">
+        </div>
+        <div class="archive__details">
+          <h3 class="archive__location">Marsala, Sicily</h3>
+          <p class="archive__place">Archaeological site</p>
+          <p class="archive__description">An ancient painted altar bearing traces of wine rituals. Millennia later, the region still carries the name of its most famous wine.</p>
+          <span class="archive__date">Found 2023</span>
+          <div class="archive__tags">
+            <span class="archive__tag">the god & his world</span>
           </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Berlin, Germany</h3>
-            <p class="archive__place">Altes Museum</p>
-            <p class="archive__description">Wine-related artifact in the Berlin collections.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+        </div>
+      </article>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/berlin museum.jpg" alt="Artifact, Altes Museum Berlin">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Berlin, Germany</h3>
-            <p class="archive__place">Altes Museum</p>
-            <p class="archive__description">Wine imagery in the Berlin collections.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
+    </div>
 
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/barcelona.png" alt="Bronze Bacchanalian sculpture, Barcelona">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Barcelona, Spain</h3>
-            <p class="archive__place">Public square</p>
-            <p class="archive__description">A bronze Bacchanal — figures entwined, one lifting grapes to the sky. The god's world rendered in metal, presiding over a Catalan plaza.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
-
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/usak muzesi turkiye.png" alt="Roman funerary relief with grape vines, Uşak Museum">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Uşak, Turkey</h3>
-            <p class="archive__place">Uşak Museum</p>
-            <p class="archive__description">A Roman funerary stele — the deceased gazes out beneath a pediment carved with grapes and a bird. Even in death, the vine accompanies.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
-
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/akhisar-putti.png" alt="Putti fountain with painted grapes, Akhisar">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Akhisar, Turkey</h3>
-            <p class="archive__place">City square</p>
-            <p class="archive__description">Putti holding painted grapes at a city fountain — a trace of wine culture in a land where the vine has grown for millennia.</p>
-            <span class="archive__date">Found 2026</span>
-          </div>
-        </article>
-
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/bruchsal-schloss.png" alt="Classical sculpture with figures and grapes, Bruchsal Schloss">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Bruchsal, Germany</h3>
-            <p class="archive__place">Schloss garden</p>
-            <p class="archive__description">A classical sculpture group in the palace garden — figures entwined with grapes, Baroque excess rendered in stone.</p>
-            <span class="archive__date">Found 2025</span>
-          </div>
-        </article>
-
-        <article class="archive__entry">
-          <div class="archive__image">
-            <img src="images/traces/marsala-altar.png" alt="Ancient altar in Marsala, Sicily">
-          </div>
-          <div class="archive__details">
-            <h3 class="archive__location">Marsala, Sicily</h3>
-            <p class="archive__place">Archaeological site</p>
-            <p class="archive__description">An ancient painted altar bearing traces of wine rituals. Millennia later, the region still carries the name of its most famous wine.</p>
-            <span class="archive__date">Found 2023</span>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- Category: The Act (empty for now) -->
-    <section class="archive__category archive__category--empty">
-      <h2 class="archive__category-title">the act</h2>
-      <p class="archive__category-desc">Toasting, drinking, feasting. The gestures of consumption and celebration.</p>
-      <p class="archive__empty-note">No entries yet — still looking.</p>
-    </section>
+    <!-- Empty state message for "the act" -->
+    <p class="archive__empty-note" id="emptyMessage" style="display: none;">No entries yet — still looking.</p>
 
   </main>
 
@@ -579,5 +671,42 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+    // Filter functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const entries = document.querySelectorAll('.archive__entry');
+      const emptyMessage = document.getElementById('emptyMessage');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filter = this.dataset.filter;
+
+          // Update active button
+          filterButtons.forEach(btn => btn.classList.remove('filter-btn--active'));
+          this.classList.add('filter-btn--active');
+
+          // Filter entries
+          let visibleCount = 0;
+          entries.forEach(entry => {
+            const categories = entry.dataset.categories;
+            if (filter === 'all' || categories.includes(filter)) {
+              entry.style.display = '';
+              visibleCount++;
+            } else {
+              entry.style.display = 'none';
+            }
+          });
+
+          // Show empty message if no entries (for "the act")
+          if (visibleCount === 0) {
+            emptyMessage.style.display = 'block';
+          } else {
+            emptyMessage.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
