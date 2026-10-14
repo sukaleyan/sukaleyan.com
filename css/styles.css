@@ -147,10 +147,9 @@ em {
    ================================ */
 
 .atelier {
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: var(--space-lg) var(--space-md);
-  padding-right: calc(var(--space-md) + 100px); /* Space for nav */
 }
 
 /* ================================
@@ -283,10 +282,7 @@ em {
    ================================ */
 
 .about__content {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: var(--space-lg);
-  align-items: start;
+  max-width: 700px;
 }
 
 .about__card {
@@ -630,6 +626,65 @@ em {
 }
 
 /* ================================
+   LINKS SECTION
+   ================================ */
+
+.section--links {
+  padding: var(--space-xl) 0;
+}
+
+.links__content {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.links__item {
+  font-family: 'Cormorant', Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--ink);
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--cream-dark);
+  background: var(--paper);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.links__item:hover {
+  border-color: var(--wine);
+  color: var(--wine);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(44, 36, 22, 0.1);
+}
+
+.links__item--primary {
+  background: var(--wine);
+  color: var(--paper);
+  border-color: var(--wine);
+}
+
+.links__item--primary:hover {
+  background: var(--wine-deep);
+  color: var(--paper);
+  border-color: var(--wine-deep);
+}
+
+@media (max-width: 500px) {
+  .links__content {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+  }
+
+  .links__item {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+}
+
+/* ================================
    FOOTER
    ================================ */
 
@@ -701,37 +756,8 @@ em {
     font-size: 16px;
   }
 
-  .nav {
-    position: fixed;
-    top: auto;
-    bottom: var(--space-sm);
-    right: 50%;
-    transform: translateX(50%);
-    flex-direction: row;
-    background: var(--paper);
-    padding: var(--space-xs) var(--space-sm);
-    border: 1px solid var(--cream-dark);
-    border-radius: 4px;
-    box-shadow: 0 4px 20px rgba(44, 36, 22, 0.15);
-  }
-
-  .nav__item {
-    transform: none !important;
-    font-size: 0.95rem;
-    padding: 0.3rem 0.6rem;
-    border: none;
-    background: none;
-    box-shadow: none;
-  }
-
-  .nav__item:hover {
-    transform: none !important;
-    box-shadow: none;
-  }
-
   .atelier {
-    padding-right: var(--space-md);
-    padding-bottom: calc(var(--space-lg) + 60px);
+    padding-bottom: var(--space-lg);
   }
 
   .intro {
