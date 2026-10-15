@@ -147,9 +147,10 @@ em {
    ================================ */
 
 .atelier {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: var(--space-lg) var(--space-md);
+  padding-right: calc(var(--space-md) + 100px); /* Space for nav */
 }
 
 /* ================================
@@ -282,6 +283,10 @@ em {
    ================================ */
 
 .about__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  align-items: start;
   max-width: 700px;
 }
 
@@ -756,8 +761,37 @@ em {
     font-size: 16px;
   }
 
+  .nav {
+    position: fixed;
+    top: auto;
+    bottom: var(--space-sm);
+    right: 50%;
+    transform: translateX(50%);
+    flex-direction: row;
+    background: var(--paper);
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--cream-dark);
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(44, 36, 22, 0.15);
+  }
+
+  .nav__item {
+    transform: none !important;
+    font-size: 0.95rem;
+    padding: 0.3rem 0.6rem;
+    border: none;
+    background: none;
+    box-shadow: none;
+  }
+
+  .nav__item:hover {
+    transform: none !important;
+    box-shadow: none;
+  }
+
   .atelier {
-    padding-bottom: var(--space-lg);
+    padding-right: var(--space-md);
+    padding-bottom: calc(var(--space-lg) + 60px);
   }
 
   .intro {
