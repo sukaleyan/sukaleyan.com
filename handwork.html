@@ -9,7 +9,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -23,54 +23,94 @@
       --gold: #ffb422;
       --white: #ffffff;
       --text-dark: #333333;
+      --text-light: #666666;
+      --border: #e5e5e5;
     }
 
     body {
-      font-family: 'Mulish', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       font-weight: 400;
       line-height: 1.7;
       color: var(--text-dark);
-      background-color: var(--white);
+      background-color: var(--burgundy);
+      min-height: 100vh;
     }
 
     .container {
-      max-width: 700px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 4rem 2rem;
+      padding: 3rem;
+      background-color: var(--white);
+      min-height: 100vh;
     }
 
     .back {
       display: inline-block;
-      margin-bottom: 2rem;
       color: var(--burgundy);
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+      transition: opacity 0.2s;
     }
 
     .back:hover {
-      text-decoration: underline;
+      opacity: 0.7;
     }
 
-    h1 {
-      font-size: 2.5rem;
-      font-weight: 700;
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .header__title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 3rem;
+      font-weight: 400;
       color: var(--burgundy);
       margin-bottom: 1.5rem;
-      text-transform: lowercase;
     }
 
-    .intro {
-      font-size: 1.1rem;
+    .header__intro {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      max-width: 500px;
+      margin: 0 auto;
       line-height: 1.8;
-      margin-bottom: 2rem;
     }
 
     .coming {
       background-color: var(--gold);
       color: var(--text-dark);
-      padding: 2rem;
+      padding: 3rem 2rem;
       text-align: center;
-      font-weight: 500;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .footer {
+      margin-top: 4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 800px) {
+      body {
+        background-color: var(--white);
+      }
+
+      .container {
+        padding: 2rem 1.5rem;
+      }
+
+      .header__title {
+        font-size: 2.2rem;
+      }
     }
   </style>
 </head>
@@ -79,13 +119,18 @@
   <main class="container">
     <a href="/" class="back">&larr; back</a>
 
-    <h1>handwork</h1>
-
-    <p class="intro">Objects made by hand — felt, wool, and other materials shaped slowly, layer by layer. Work inspired by the same curiosity that drives everything else here.</p>
+    <header class="header">
+      <h1 class="header__title">handwork</h1>
+      <p class="header__intro">Objects made by hand — felt, wool, and other materials shaped slowly, layer by layer. Work inspired by the same curiosity that drives everything else here.</p>
+    </header>
 
     <div class="coming">
       Coming soon.
     </div>
+
+    <footer class="footer">
+      &copy; 2026 Sukaleyan
+    </footer>
   </main>
 
 </body>
