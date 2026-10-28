@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Şule Nur Kaya (Sukaleyan) — Art historian exploring wine in visual and material culture. Founder of Runic Grapes.">
+  <meta name="description" content="Şule Nur Kaya — Art historian exploring wine's presence in art, architecture, and material culture.">
   <meta name="author" content="Şule Nur Kaya">
   <title>Sukaleyan | Şule Nur Kaya</title>
 
-  <!-- Structured data for search -->
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,184 +28,201 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Caveat:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --burgundy: #891e19;
+      --navy: #2b3249;
+      --green: #5f8415;
+      --gold: #ffb422;
+      --white: #ffffff;
+      --text-dark: #333333;
+    }
+
+    body {
+      font-family: 'Mulish', sans-serif;
+      font-weight: 400;
+      line-height: 1.7;
+      color: var(--text-dark);
+      background-color: var(--white);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+    }
+
+    /* Header */
+    .header {
+      margin-bottom: 2.5rem;
+    }
+
+    .header__name {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--burgundy);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+      text-transform: lowercase;
+    }
+
+    .header__fullname {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--burgundy);
+      opacity: 0.85;
+    }
+
+    /* Bio */
+    .bio {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 3.5rem;
+      max-width: 720px;
+    }
+
+    .bio p {
+      margin-bottom: 1rem;
+    }
+
+    .bio p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Projects Grid */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .project {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: var(--white);
+      font-size: 0.95rem;
+      font-weight: 500;
+      text-align: center;
+      padding: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+
+    .project--runic {
+      background-color: var(--navy);
+    }
+
+    .project--stw {
+      background-color: var(--navy);
+    }
+
+    .project--traces {
+      background-color: var(--green);
+    }
+
+    .project--handwork {
+      background-color: var(--gold);
+      color: var(--text-dark);
+    }
+
+    /* Footer */
+    .footer {
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .footer__link {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.7;
+      transition: opacity 0.2s ease;
+    }
+
+    .footer__link:hover {
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .container {
+        padding: 3rem 1.5rem;
+      }
+
+      .header__name {
+        font-size: 2.5rem;
+      }
+
+      .header__fullname {
+        font-size: 1.1rem;
+      }
+
+      .bio {
+        font-size: 1rem;
+      }
+
+      .projects {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .project {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Paper texture overlay -->
-  <div class="paper-texture"></div>
-
-  <!-- Floating navigation -->
-  <nav class="nav">
-    <a href="#about" class="nav__item">about</a>
-    <a href="#works" class="nav__item">works</a>
-    <a href="#traces" class="nav__item">traces</a>
-    <a href="#vine" class="nav__item">the vine</a>
-  </nav>
-
-  <!-- Main canvas -->
-  <main class="atelier">
-
-    <!-- Hero/Intro area -->
-    <header class="intro">
-      <div class="intro__name-block">
-        <h1 class="intro__name">sukaleyan</h1>
-      </div>
-
-      <div class="intro__photo-frame">
-        <img src="images/me-wine-atlas.jpg" alt="Şule Nur Kaya" class="intro__photo">
-      </div>
-
-      <div class="intro__welcome">
-        <p>Welcome to my little digital corner.</p>
-        <p>This is where I keep track of myself — someone who's mostly all over the place. One thing holds it all together, though: wine. Not as a drink, but as history, culture, imagery, and art.</p>
-        <p>Everything here grows from the vine.</p>
-      </div>
+  <main class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__name">sukaleyan</h1>
+      <p class="header__fullname">Şule Nur Kaya</p>
     </header>
 
-    <!-- About section -->
-    <section id="about" class="section section--about">
-      <div class="section__label">
-        <span class="label-text">who is this</span>
-        <span class="label-line"></span>
-      </div>
-
-      <div class="about__content">
-        <div class="about__card about__card--main">
-          <p>It all started with a tiny vineyard that fell into my life by accident. There was something about the plants — as mysterious as the final product. The vines were so beautiful, I couldn't stop looking at them. I wasn't sure what I was feeling, but it was strong.</p>
-          <p>I needed to learn. I started digging into books, going to wine festivals, researching online, following Masters of Wine on social media, getting on mailing lists of wine publications. After trying all of this, I found my own way in: through art history, the thing I already knew.</p>
-          <p>Now I look for wine everywhere — not in glasses, but in visual and material culture. In architectural details, museums, public spaces, libraries. I collect what I find in an ever-growing archive. Based on my findings, I'm developing an app called Spot the Wine to invite others to explore these traces with me.</p>
-          <p>All of this lives under <a href="https://runicgrapes.com" target="_blank" rel="noopener">Runic Grapes</a> — where I collaborate with artists inspired by wine, research its art historical context, and curate objects in which wine and its world are embedded.</p>
-          <p>I also create work myself — yes, wine again. And I still tend that tiny vineyard in Württemberg.</p>
-          <p>I told you, I'm all over the place. But just like a vine, I climb on anything.</p>
-        </div>
-      </div>
+    <!-- Bio -->
+    <section class="bio">
+      <p>Art historian based in Germany, originally from Istanbul, researching wine in visual and material culture across time and space.</p>
+      <p>Founder of Runic Grapes, a platform exploring wine through art and cultural research. Currently developing Spot the Wine, a discovery app tracing wine's cultural presence.</p>
+      <p>Also a maker of objects inspired by the same curiosity, and keeper of a small vineyard in Württemberg.</p>
     </section>
 
-    <!-- Works section -->
-    <section id="works" class="section section--works">
-      <div class="section__label section__label--right">
-        <span class="label-line"></span>
-        <span class="label-text">what I make</span>
-      </div>
-
-      <div class="works__content">
-        <div class="works__intro">
-          <h2 class="works__title">felt objects</h2>
-          <p>I work with wool — shaping, needling, felting it into forms. Heads, masks, vessels, strange soft things. Each piece takes shape slowly, layer by layer.</p>
-        </div>
-
-        <div class="works__gallery">
-          <div class="works__placeholder works__placeholder--1">
-            <img src="images/feltmaking/felt-head-piece.jpg" alt="Felt head piece">
-          </div>
-          <div class="works__placeholder works__placeholder--2">
-            <img src="images/feltmaking/me-working-felt.jpg" alt="Working on felt">
-          </div>
-          <div class="works__placeholder works__placeholder--3">
-            <img src="images/feltmaking/wool-work-in-progress.jpg" alt="Wool work in progress">
-          </div>
-        </div>
-
-        <p class="works__note">My felt work lives at <a href="https://runicgrapes.com" target="_blank" rel="noopener">Runic Grapes</a> — a platform I created for wine-inspired art and objects.</p>
-      </div>
+    <!-- Projects -->
+    <section class="projects">
+      <a href="https://runicgrapes.com" target="_blank" rel="noopener" class="project project--runic">Runic Grapes</a>
+      <a href="https://runicgrapes.com/spot-the-wine.html" target="_blank" rel="noopener" class="project project--stw">Spot the Wine</a>
+      <a href="traces.html" class="project project--traces">Traces</a>
+      <a href="handwork.html" class="project project--handwork">Handwork</a>
     </section>
 
-    <!-- Traces section -->
-    <section id="traces" class="section section--traces">
-      <div class="section__label">
-        <span class="label-text">what I follow</span>
-        <span class="label-line"></span>
-      </div>
-
-      <div class="traces__content">
-        <div class="traces__intro">
-          <h2 class="traces__title">collecting wine imagery</h2>
-          <p>It started after we bought our vineyard. Grapevines had always been everywhere where I come from — Anatolia — but so abundant that I never really paid attention. Now I can't stop looking.</p>
-          <p>As an art historian, I had to pursue this new obsession through images. Without even realizing it, I started looking for vine and wine imagery everywhere. Building facades, city signs, cathedral towers, village squares, library shelves. And when I find them, I collect them.</p>
-        </div>
-      </div>
-
-      <div class="traces__gallery-wrapper">
-        <a href="traces.html" class="traces__see-all">see all →</a>
-        <div class="works__gallery traces__gallery">
-          <div class="works__placeholder works__placeholder--1">
-            <img loading="lazy" src="images/traces/sintra-triton-1.jpg" alt="Triton Window at Pena Palace, Sintra">
-          </div>
-          <div class="works__placeholder works__placeholder--2">
-            <img loading="lazy" src="images/traces/florio vinery mural sicily.jpg" alt="Surrealist mural, Florio winery Sicily">
-          </div>
-          <div class="works__placeholder works__placeholder--3">
-            <img loading="lazy" src="images/traces/barcelona.jpg" alt="Bronze Bacchanal sculpture, Barcelona">
-          </div>
-          <div class="works__placeholder works__placeholder--4">
-            <img loading="lazy" src="images/traces/marsala florio winery.jpg" alt="Giant wine barrel, Florio winery Marsala">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- The Vine section -->
-    <section id="vine" class="section section--vine">
-      <div class="section__label section__label--right">
-        <span class="label-line"></span>
-        <span class="label-text">where I grow</span>
-      </div>
-
-      <div class="vine__content">
-        <div class="vine__text">
-          <h2 class="vine__title">the vineyard</h2>
-          <p>1500 square meters of vines in Württemberg. We inherited it by accident and fell in love on purpose.</p>
-          <p>We're learning as we go — pruning in winter, watching in spring, harvesting in autumn. Making small batches of wine that probably won't win awards but taste like ours.</p>
-          <p>The vineyard is where everything converges: the research, the making, the living.</p>
-        </div>
-
-        <div class="vine__visual">
-          <div class="vine-drawing">
-            <svg viewBox="0 0 200 300" class="vine-svg">
-              <path class="vine-line" d="M100,300 Q90,250 100,200 Q110,150 95,100 Q85,50 100,0" fill="none" stroke="currentColor" stroke-width="2"/>
-              <circle class="vine-grape" cx="80" cy="180" r="8"/>
-              <circle class="vine-grape" cx="95" cy="190" r="8"/>
-              <circle class="vine-grape" cx="85" cy="200" r="8"/>
-              <circle class="vine-grape" cx="100" cy="205" r="6"/>
-              <circle class="vine-grape" cx="75" cy="195" r="6"/>
-              <path class="vine-leaf" d="M120,120 Q140,100 135,80 Q130,90 120,85 Q110,80 105,95 Q100,110 120,120" fill="currentColor"/>
-              <path class="vine-leaf" d="M70,60 Q50,50 55,30 Q60,40 70,35 Q80,30 85,45 Q90,60 70,60" fill="currentColor"/>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-      <div class="works__gallery vine__gallery">
-        <div class="works__placeholder works__placeholder--1">
-          <img src="images/vineyard/me-crane.jpg" alt="Working in the vineyard">
-        </div>
-        <div class="works__placeholder works__placeholder--2">
-          <img src="images/vineyard/chairs-vineyard.jpg" alt="Chairs in the vineyard">
-        </div>
-        <div class="works__placeholder works__placeholder--3">
-          <img src="images/vineyard/grapes-portrait.jpg" alt="With the grapes">
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact/Footer -->
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer__content">
-        <p class="footer__text">Say hello!</p>
-        <div class="footer__links">
-          <a href="https://instagram.com/sukaleyan" target="_blank" rel="noopener" class="footer__link">instagram</a>
-          <a href="https://linkedin.com/in/sukaleyan" target="_blank" rel="noopener" class="footer__link">linkedin</a>
-          <a href="mailto:hello@sukaleyan.com" class="footer__link">email</a>
-        </div>
-      </div>
-      <p class="footer__copy">© 2026 Şule Nur Kaya</p>
+      <a href="mailto:kayasulenur@gmail.com" class="footer__link">email</a>
+      <a href="https://linkedin.com/in/sukaleyan" target="_blank" rel="noopener" class="footer__link">linkedin</a>
+      <a href="https://instagram.com/sukaleyan" target="_blank" rel="noopener" class="footer__link">instagram</a>
     </footer>
-
   </main>
 
-  <script src="js/main.js"></script>
 </body>
 </html>
