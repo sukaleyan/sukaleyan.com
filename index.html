@@ -28,7 +28,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
   <style>
     * {
@@ -47,7 +47,7 @@
     }
 
     body {
-      font-family: 'Mulish', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       font-weight: 400;
       line-height: 1.7;
       color: var(--text-dark);
@@ -55,85 +55,110 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 4rem 2rem;
     }
 
-    /* Header */
-    .header {
-      margin-bottom: 2.5rem;
+    /* Hero Section - Two Column Layout */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: start;
+      margin-bottom: 4rem;
     }
 
+    .hero__content {
+      padding-top: 1rem;
+    }
+
+    /* Header */
     .header__name {
-      font-size: 3.5rem;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 4rem;
       font-weight: 700;
       color: var(--burgundy);
       letter-spacing: -0.02em;
+      line-height: 1.1;
       margin-bottom: 0.25rem;
-      text-transform: lowercase;
     }
 
     .header__fullname {
-      font-size: 1.25rem;
-      font-weight: 500;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-style: italic;
       color: var(--burgundy);
-      opacity: 0.85;
+      margin-bottom: 2rem;
     }
 
     /* Bio */
     .bio {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       line-height: 1.8;
-      margin-bottom: 3.5rem;
-      max-width: 720px;
     }
 
     .bio p {
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
     }
 
     .bio p:last-child {
       margin-bottom: 0;
     }
 
-    /* Projects Grid */
+    /* Collage */
+    .hero__collage {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .hero__collage img {
+      max-width: 100%;
+      height: auto;
+      max-height: 500px;
+      object-fit: contain;
+    }
+
+    /* Projects Grid - 2x2 */
     .projects {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.25rem;
-      margin-bottom: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      max-width: 600px;
+      margin-bottom: 4rem;
     }
 
     .project {
-      aspect-ratio: 1;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
       color: var(--white);
-      font-size: 0.95rem;
-      font-weight: 500;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 400;
       text-align: center;
-      padding: 1rem;
+      padding: 1.5rem 2rem;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
     .project:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     }
 
     .project--runic {
-      background-color: var(--navy);
+      background-color: var(--burgundy);
     }
 
     .project--stw {
-      background-color: var(--navy);
+      background-color: var(--green);
     }
 
     .project--traces {
-      background-color: var(--green);
+      background-color: var(--navy);
     }
 
     .project--handwork {
@@ -146,7 +171,7 @@
       padding-top: 2rem;
       border-top: 1px solid #eee;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 2rem;
       flex-wrap: wrap;
     }
@@ -154,7 +179,7 @@
     .footer__link {
       color: var(--text-dark);
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       opacity: 0.7;
       transition: opacity 0.2s ease;
     }
@@ -164,17 +189,30 @@
     }
 
     /* Responsive */
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       .container {
         padding: 3rem 1.5rem;
       }
 
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .hero__collage {
+        order: -1;
+      }
+
+      .hero__collage img {
+        max-height: 400px;
+      }
+
       .header__name {
-        font-size: 2.5rem;
+        font-size: 3rem;
       }
 
       .header__fullname {
-        font-size: 1.1rem;
+        font-size: 1.25rem;
       }
 
       .bio {
@@ -182,12 +220,26 @@
       }
 
       .projects {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
+        max-width: 100%;
       }
 
       .project {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
+        padding: 1.25rem 1.5rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .header__name {
+        font-size: 2.5rem;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .footer {
+        justify-content: center;
       }
     }
   </style>
@@ -195,25 +247,36 @@
 <body>
 
   <main class="container">
-    <!-- Header -->
-    <header class="header">
-      <h1 class="header__name">sukaleyan</h1>
-      <p class="header__fullname">Şule Nur Kaya</p>
-    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__content">
+        <!-- Header -->
+        <header>
+          <h1 class="header__name">sukaleyan</h1>
+          <p class="header__fullname">Şule Nur Kaya</p>
+        </header>
 
-    <!-- Bio -->
-    <section class="bio">
-      <p>Art historian based in Germany, originally from Istanbul, researching wine in visual and material culture across time and space.</p>
-      <p>Founder of Runic Grapes, a platform exploring wine through art and cultural research. Currently developing Spot the Wine, a discovery app tracing wine's cultural presence.</p>
-      <p>Also a maker of objects inspired by the same curiosity, and keeper of a small vineyard in Württemberg.</p>
+        <!-- Bio -->
+        <div class="bio">
+          <p>Art historian based in Germany, originally from Istanbul, researching wine in visual and material culture across time and space.</p>
+          <p>Founder of Runic Grapes, a platform exploring wine through art and cultural research.</p>
+          <p>Currently developing Spot the Wine, a discovery app tracing wine's cultural presence.</p>
+          <p>Also a maker of objects inspired by the same curiosity and keeper of a small vineyard in Württemberg.</p>
+        </div>
+      </div>
+
+      <!-- Collage -->
+      <div class="hero__collage">
+        <img src="images/collage.png" alt="Şule Nur Kaya with The World Atlas of Wine - creative collage">
+      </div>
     </section>
 
     <!-- Projects -->
     <section class="projects">
-      <a href="https://runicgrapes.com" target="_blank" rel="noopener" class="project project--runic">Runic Grapes</a>
-      <a href="https://runicgrapes.com/spot-the-wine.html" target="_blank" rel="noopener" class="project project--stw">Spot the Wine</a>
-      <a href="traces.html" class="project project--traces">Traces</a>
-      <a href="handwork.html" class="project project--handwork">Handwork</a>
+      <a href="https://runicgrapes.com" target="_blank" rel="noopener" class="project project--runic">runic grapes</a>
+      <a href="https://runicgrapes.com/spot-the-wine.html" target="_blank" rel="noopener" class="project project--stw">spot the wine</a>
+      <a href="traces.html" class="project project--traces">traces</a>
+      <a href="handwork.html" class="project project--handwork">handwork</a>
     </section>
 
     <!-- Footer -->
