@@ -77,7 +77,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 3rem;
-      align-items: center;
+      align-items: start;
       margin-bottom: 4rem;
     }
 
@@ -85,7 +85,20 @@
       padding-top: 1rem;
     }
 
+    .hero__right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 1rem;
+    }
+
     /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
     .header__name {
       font-family: 'Laqonic', sans-serif;
       font-size: 4rem;
@@ -123,6 +136,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
+      width: 100%;
     }
 
     .hero__collage img {
@@ -179,12 +193,12 @@
 
     /* Mini Nav */
     .mini-nav {
-      position: fixed;
-      top: 1.5rem;
-      right: 1.5rem;
       display: flex;
       gap: 0.5rem;
-      z-index: 100;
+    }
+
+    .mini-nav--mobile {
+      display: none;
     }
 
     .mini-nav__item {
@@ -259,15 +273,42 @@
 
       .hero {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 1.5rem;
+      }
+
+      .hero__content {
+        display: contents;
+      }
+
+      .header {
+        order: 1;
+      }
+
+      .hero__right {
+        display: contents;
+      }
+
+      .mini-nav--desktop {
+        display: none;
+      }
+
+      .mini-nav--mobile {
+        display: flex;
+        align-items: center;
+        padding-top: 0.5rem;
       }
 
       .hero__collage {
-        order: 1;
+        order: 2;
       }
 
       .hero__collage img {
         max-height: 400px;
+      }
+
+      .bio {
+        order: 3;
+        font-size: 1rem;
       }
 
       .header__name {
@@ -276,10 +317,6 @@
 
       .header__fullname {
         font-size: 1.25rem;
-      }
-
-      .bio {
-        font-size: 1rem;
       }
 
       .projects {
@@ -309,30 +346,23 @@
 </head>
 <body>
 
-  <!-- Mini Navigation -->
-  <nav class="mini-nav">
-    <a href="https://runicgrapes.com" target="_blank" rel="noopener" class="mini-nav__item mini-nav__item--runic">
-      <span class="mini-nav__label">runic grapes</span>
-    </a>
-    <a href="https://runicgrapes.com/spot-the-wine.html" target="_blank" rel="noopener" class="mini-nav__item mini-nav__item--stw">
-      <span class="mini-nav__label">spot the wine</span>
-    </a>
-    <a href="traces.html" class="mini-nav__item mini-nav__item--traces">
-      <span class="mini-nav__label">traces</span>
-    </a>
-    <a href="handwork.html" class="mini-nav__item mini-nav__item--handwork">
-      <span class="mini-nav__label">handwork</span>
-    </a>
-  </nav>
-
   <main class="container">
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero__content">
         <!-- Header -->
-        <header>
-          <h1 class="header__name">sukaleyan</h1>
-          <p class="header__fullname">Şule Nur Kaya</p>
+        <header class="header">
+          <div class="header__text">
+            <h1 class="header__name">sukaleyan</h1>
+            <p class="header__fullname">Şule Nur Kaya</p>
+          </div>
+          <!-- Mini Nav (mobile) -->
+          <nav class="mini-nav mini-nav--mobile">
+            <a href="https://runicgrapes.com" target="_blank" rel="noopener" class="mini-nav__item mini-nav__item--runic"><span class="mini-nav__label">runic grapes</span></a>
+            <a href="https://runicgrapes.com/spot-the-wine.html" target="_blank" rel="noopener" class="mini-nav__item mini-nav__item--stw"><span class="mini-nav__label">spot the wine</span></a>
+            <a href="traces.html" class="mini-nav__item mini-nav__item--traces"><span class="mini-nav__label">traces</span></a>
+            <a href="handwork.html" class="mini-nav__item mini-nav__item--handwork"><span class="mini-nav__label">handwork</span></a>
+          </nav>
         </header>
 
         <!-- Bio -->
@@ -343,9 +373,19 @@
         </div>
       </div>
 
-      <!-- Collage -->
-      <div class="hero__collage">
-        <img src="images/collage.png" alt="Şule Nur Kaya with The World Atlas of Wine - creative collage">
+      <!-- Right column -->
+      <div class="hero__right">
+        <!-- Mini Nav (desktop) -->
+        <nav class="mini-nav mini-nav--desktop">
+          <a href="https://runicgrapes.com" target="_blank" rel="noopener" class="mini-nav__item mini-nav__item--runic"><span class="mini-nav__label">runic grapes</span></a>
+          <a href="https://runicgrapes.com/spot-the-wine.html" target="_blank" rel="noopener" class="mini-nav__item mini-nav__item--stw"><span class="mini-nav__label">spot the wine</span></a>
+          <a href="traces.html" class="mini-nav__item mini-nav__item--traces"><span class="mini-nav__label">traces</span></a>
+          <a href="handwork.html" class="mini-nav__item mini-nav__item--handwork"><span class="mini-nav__label">handwork</span></a>
+        </nav>
+        <!-- Collage -->
+        <div class="hero__collage">
+          <img src="images/collage.png" alt="Şule Nur Kaya with The World Atlas of Wine - creative collage">
+        </div>
       </div>
     </section>
 
