@@ -177,6 +177,54 @@
       color: var(--text-dark);
     }
 
+    /* Mini Nav */
+    .mini-nav {
+      position: fixed;
+      top: 1.5rem;
+      right: 1.5rem;
+      display: flex;
+      gap: 0.5rem;
+      z-index: 100;
+    }
+
+    .mini-nav__item {
+      width: 12px;
+      height: 12px;
+      display: block;
+      position: relative;
+    }
+
+    .mini-nav__item--runic { background-color: var(--burgundy); }
+    .mini-nav__item--stw { background-color: var(--green); }
+    .mini-nav__item--traces { background-color: var(--navy); }
+    .mini-nav__item--handwork { background-color: var(--gold); }
+
+    .mini-nav__label {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 0.5rem;
+      font-family: 'Mulish', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      white-space: nowrap;
+      opacity: 0;
+      transform: translateY(-4px);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+      pointer-events: none;
+    }
+
+    .mini-nav__item:hover .mini-nav__label {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mini-nav__item:hover {
+      transform: scale(1.2);
+      transition: transform 0.15s ease;
+    }
+
     /* Footer */
     .footer {
       padding-top: 2rem;
@@ -215,7 +263,7 @@
       }
 
       .hero__collage {
-        order: -1;
+        order: 1;
       }
 
       .hero__collage img {
@@ -261,6 +309,22 @@
 </head>
 <body>
 
+  <!-- Mini Navigation -->
+  <nav class="mini-nav">
+    <a href="https://runicgrapes.com" target="_blank" rel="noopener" class="mini-nav__item mini-nav__item--runic">
+      <span class="mini-nav__label">runic grapes</span>
+    </a>
+    <a href="https://runicgrapes.com/spot-the-wine.html" target="_blank" rel="noopener" class="mini-nav__item mini-nav__item--stw">
+      <span class="mini-nav__label">spot the wine</span>
+    </a>
+    <a href="traces.html" class="mini-nav__item mini-nav__item--traces">
+      <span class="mini-nav__label">traces</span>
+    </a>
+    <a href="handwork.html" class="mini-nav__item mini-nav__item--handwork">
+      <span class="mini-nav__label">handwork</span>
+    </a>
+  </nav>
+
   <main class="container">
     <!-- Hero Section -->
     <section class="hero">
@@ -273,8 +337,7 @@
 
         <!-- Bio -->
         <div class="bio">
-          <p>Art historian based in Germany, originally from Istanbul, researching wine in visual and material culture across time and space.</p>
-          <p>Founder of Runic Grapes, a platform exploring wine culture through arts, crafts and history.</p>
+          <p>Art historian from Istanbul, based in Germany. Founder of Runic Grapes, a platform exploring wine in visual and material culture across time and space.</p>
           <p>Currently developing Spot the Wine, a discovery app tracing wine's cultural presence.</p>
           <p>Also a maker of objects inspired by the same curiosity and keeper of a small vineyard in Württemberg.</p>
         </div>
